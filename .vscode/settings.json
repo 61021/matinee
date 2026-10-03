@@ -1,0 +1,8 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "prettier.enable": false,
+  "eslint.useFlatConfig": true,
+  "eslint.validate": ["javascript", "typescript", "css", "json", "jsonc", "markdown", "yaml"]
+}
