@@ -1,0 +1,42 @@
+/* Jellyfin 12 reads these palette variables in both the modern and legacy UI. */
+:root,
+:root[data-theme] {
+  --jf-palette-background-default: #0a0b0d;
+  --jf-palette-background-paper: #16181c;
+  --jf-palette-text-primary: #f4f5f7;
+  --jf-palette-text-secondary: rgb(244 245 247 / 66%);
+  --jf-palette-primary-main: #f4f5f7;
+  --jf-palette-primary-contrastText: #0a0b0d;
+  --jf-palette-divider: rgb(255 255 255 / 10%);
+  --jf-palette-action-hover: rgb(255 255 255 / 8%);
+  --jf-palette-AppBar-defaultBg: #0a0b0d;
+  --jf-card-borderRadius: 12px;
+
+  --matinee-accent: #f2b84b;
+  --matinee-progress-track: rgb(255 255 255 / 20%);
+  --matinee-button-secondary: rgb(255 255 255 / 13%);
+  --matinee-appbar-scrim: linear-gradient(to bottom, rgb(10 11 13 / 82%), rgb(10 11 13 / 0%));
+  --matinee-card-shadow: 0 12px 28px -14px rgb(0 0 0 / 80%);
+  --matinee-card-shadow-hover: 0 18px 40px -14px rgb(0 0 0 / 90%);
+  --matinee-card-hover: scale(1.04);
+  --matinee-button-radius: 999px;
+}
+
+:root[data-theme='light'] {
+  --jf-palette-background-default: #eef0f3;
+  --jf-palette-background-paper: #fff;
+  --jf-palette-text-primary: #0e1116;
+  --jf-palette-text-secondary: rgb(14 17 22 / 62%);
+  --jf-palette-primary-main: #0e1116;
+  --jf-palette-primary-contrastText: #fff;
+  --jf-palette-divider: rgb(0 0 0 / 8%);
+  --jf-palette-action-hover: rgb(0 0 0 / 5%);
+  --jf-palette-AppBar-defaultBg: #eef0f3;
+
+  --matinee-accent: #b8730c;
+  --matinee-progress-track: rgb(0 0 0 / 14%);
+  --matinee-button-secondary: rgb(0 0 0 / 7%);
+  --matinee-appbar-scrim: linear-gradient(to bottom, rgb(238 240 243 / 90%), rgb(238 240 243 / 0%));
+  --matinee-card-shadow: 0 12px 28px -16px rgb(20 24 32 / 45%);
+  --matinee-card-shadow-hover: 0 18px 40px -16px rgb(20 24 32 / 55%);
+}
