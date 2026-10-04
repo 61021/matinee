@@ -8,13 +8,15 @@
   "license": "MIT",
   "scripts": {
     "dev": "node scripts/dev.ts",
-    "build": "node scripts/build.ts",
+    "build": "node scripts/icons/generate.ts && node scripts/build.ts",
+    "icons": "node scripts/icons/generate.ts",
     "lint": "eslint .",
     "fix": "eslint . --fix",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^9.5.1",
+    "@phosphor-icons/core": "^2.1.1",
     "@types/node": "^24.19.1",
     "browserslist": "^4.29.3",
     "eslint": "^10.12.0",

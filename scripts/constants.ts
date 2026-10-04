@@ -6,3 +6,5 @@ export const DEV_PORT = 5178
 
 // Jellyfin also runs in TV and Android webviews that lag desktop browsers.
 export const BROWSERS = ['defaults', 'chrome >= 79', 'safari >= 15']
+
+export const ICONS_OUT_FILE = 'src/generated/icons.css'

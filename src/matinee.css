@@ -1,5 +1,6 @@
 @import './tokens.css';
 @import './base.css';
+@import './generated/icons.css';
 @import './sections.css';
 @import './cards.css';
 @import './detail.css';
