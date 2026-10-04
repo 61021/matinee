@@ -32,3 +32,12 @@
 .je-modal-input {
   border-radius: 10px;
 }
+
+/* Its icons are Material Symbols ligatures in a private font; Matinee Icons maps the same names to Phosphor. */
+:is(.material-symbols-rounded, .je-release-date-icon, .je-userreview-icon) {
+  font-family: 'Matinee Icons', 'JE Material Symbols Rounded';
+}
+
+:is(.mediaInfoItem-fileSize, .mediaInfoItem-watchProgress, .mediaInfoItem-audioLanguage) .material-icons {
+  font-family: 'Matinee Icons', 'JE Material Symbols Rounded' !important;
+}
