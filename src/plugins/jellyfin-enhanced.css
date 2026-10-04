@@ -1,0 +1,34 @@
+/* Jellyfin Enhanced (n00bcodr/Jellyfin-Enhanced) */
+.je-launcher-panel {
+  border: 1px solid var(--jf-palette-divider);
+  border-radius: 16px;
+  background: var(--jf-palette-background-paper);
+  box-shadow: 0 24px 60px -20px rgb(0 0 0 / 70%);
+}
+
+.je-tag-host :is(.quality-overlay-label, .rating-tag, .genre-tag, .age-rating-tag),
+:is(.je-chip, .je-status-chip, .je-release-date-chip, .je-awards-badge) {
+  font-family: var(--matinee-font);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.je-tag-host :is(.quality-overlay-label, .rating-tag, .genre-tag, .age-rating-tag) {
+  border-radius: 6px;
+}
+
+:is(.je-chip, .je-status-chip, .je-release-date-chip) {
+  border-radius: 999px;
+}
+
+:is(.je-modal-btn-primary, .je-modal-btn-submit, .je-modal-play-button) {
+  border: 0;
+  border-radius: var(--matinee-button-radius);
+  background: var(--jf-palette-primary-main);
+  color: var(--jf-palette-primary-contrastText);
+  font-weight: 700;
+}
+
+.je-modal-input {
+  border-radius: 10px;
+}
