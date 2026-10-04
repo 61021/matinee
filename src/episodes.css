@@ -1,0 +1,47 @@
+.listItem {
+  border-radius: calc(var(--jf-card-borderRadius) + 4px);
+}
+
+.listItem-largeImage {
+  padding: 0.5rem;
+}
+
+.listItemImage-large {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--jf-card-borderRadius);
+  box-shadow: var(--matinee-card-shadow);
+}
+
+.listItemImageButton {
+  background: rgb(0 0 0 / 45%);
+  color: #fff;
+}
+
+.listItemImageButton:hover {
+  background: var(--jf-palette-primary-main);
+  color: var(--jf-palette-primary-contrastText);
+}
+
+.listItem-largeImage .listItemBody > .listItemBodyText:first-child {
+  color: var(--jf-palette-text-primary);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.listItemMediaInfo,
+.listItem-overview,
+.listItem-bottomoverview {
+  color: var(--jf-palette-text-secondary);
+}
+
+.listItem-overview,
+.listItem-bottomoverview {
+  line-height: 1.55;
+}
+
+.playstatebutton-icon-played,
+.starIcon {
+  color: var(--matinee-accent);
+}
