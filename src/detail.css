@@ -25,6 +25,25 @@
     background: linear-gradient(to bottom, transparent, var(--jf-palette-background-default) 14rem);
   }
 
+  /* Dark text needs the artwork washed out behind it, faded in so there is no edge. */
+  :root[data-theme='light'] .itemDetailPage .detailPageWrapperContainer {
+    position: relative;
+    background: linear-gradient(
+      to bottom,
+      rgb(var(--jf-palette-background-defaultChannel) / 75%),
+      var(--jf-palette-background-default) 8rem
+    );
+  }
+
+  :root[data-theme='light'] .itemDetailPage .detailPageWrapperContainer::before {
+    content: '';
+    position: absolute;
+    inset: -6rem 0 auto;
+    height: 6rem;
+    background: linear-gradient(to bottom, transparent, rgb(var(--jf-palette-background-defaultChannel) / 75%));
+    pointer-events: none;
+  }
+
   .itemDetailPage .detailRibbon {
     flex-direction: column;
     align-items: flex-start;
