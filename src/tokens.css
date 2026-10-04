@@ -47,6 +47,7 @@
   --matinee-ribbon-lift-mobile: 7rem;
   --matinee-logo-height-mobile: 88px;
   --matinee-to-end: to right;
+  --matinee-font: 'Geist Variable', 'IBM Plex Sans Arabic', 'Noto Sans', sans-serif;
 }
 
 html[dir='rtl'] {
