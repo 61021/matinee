@@ -90,3 +90,52 @@
 .ratingbutton-icon-withrating {
   color: var(--matinee-accent);
 }
+
+.layout-mobile .itemDetailPage #itemBackdrop {
+  height: var(--matinee-hero-height-mobile);
+  -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent);
+  mask-image: linear-gradient(to bottom, #000 55%, transparent);
+}
+
+.layout-mobile .itemDetailPage .detailImageContainer {
+  display: none;
+}
+
+.layout-mobile .itemDetailPage .detailRibbon {
+  margin-top: calc(-1 * var(--matinee-ribbon-lift-mobile));
+  background: none;
+}
+
+.layout-mobile .itemDetailPage .infoWrapper {
+  padding-inline: 0;
+}
+
+.layout-mobile .itemDetailPage .nameContainer {
+  justify-content: center;
+  text-align: center;
+}
+
+.layout-mobile .itemDetailPage .itemMiscInfo {
+  justify-content: center;
+}
+
+.layout-mobile .itemDetailPage .detailLogo:not(.hide) {
+  display: block;
+  top: calc(
+    var(--matinee-hero-height-mobile) - 48px - var(--matinee-ribbon-lift-mobile) - var(--matinee-logo-height-mobile) -
+      8px
+  );
+  left: 15%;
+  right: 15%;
+  width: auto;
+  height: var(--matinee-logo-height-mobile);
+  background-position: center;
+}
+
+.layout-mobile
+  .itemDetailPage
+  .detailLogo:not(.hide)
+  ~ .detailPageWrapperContainer
+  :is(.parentName, .itemName.parentNameLast) {
+  display: none;
+}

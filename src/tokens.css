@@ -43,6 +43,9 @@
   --matinee-hero-height: max(62vh, 440px);
   --matinee-ribbon-lift: 11rem;
   --matinee-logo-height: 130px;
+  --matinee-hero-height-mobile: 62vh;
+  --matinee-ribbon-lift-mobile: 7rem;
+  --matinee-logo-height-mobile: 88px;
   --matinee-to-end: to right;
 }
 
