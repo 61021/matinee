@@ -68,6 +68,33 @@
     display: none;
   }
 
+  /* People and items without a backdrop keep the poster column instead of an empty hero. */
+  .backgroundContainer:not(.withBackdrop) ~ .MuiBox-root .itemDetailPage {
+    --matinee-hero-height: 2rem;
+    --matinee-ribbon-lift: 0rem;
+  }
+
+  .backgroundContainer:not(.withBackdrop) ~ .MuiBox-root .itemDetailPage .detailImageContainer:not(.hide-desktop) {
+    position: absolute;
+    inset-inline-start: 3.3%;
+    top: var(--matinee-hero-height);
+    display: block;
+    width: auto;
+  }
+
+  .backgroundContainer:not(.withBackdrop) ~ .MuiBox-root .itemDetailPage .detailImageContainer .card {
+    top: 0;
+    left: 0;
+  }
+
+  .layout-desktop
+    .backgroundContainer:not(.withBackdrop)
+    ~ .MuiBox-root
+    .itemDetailPage
+    :is(.detailRibbon, .detailPagePrimaryContent) {
+    padding-inline-start: 32.45vw;
+  }
+
   .itemDetailPage .itemName,
   .itemDetailPage .parentName {
     font-size: 2.2rem;
