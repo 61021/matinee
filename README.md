@@ -58,6 +58,7 @@ Media Bar and Home Screen Sections change Jellyfin's web files through File Tran
 
 - Made and tested on Jellyfin 12.1 in the web client.
 - The full-bleed artwork on desktop needs a window at least 1000px wide, that's Jellyfin's own rule, below that it shows no backdrop at all. Phones have their own layout and always get the artwork.
+- Jellyfin doesn't load Custom CSS on the admin dashboard and plugin settings, so those pages keep the stock look, that's true for every theme.
 - Icons are inlined in the CSS, fonts load from jsDelivr through Fontsource.
 
 ## Development
