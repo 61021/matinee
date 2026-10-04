@@ -1,0 +1,29 @@
+/* Stock rules that hardcode Jellyfin blue instead of reading the palette. */
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4 {
+  border-color: var(--matinee-accent);
+}
+
+.button-accent-flat {
+  color: var(--matinee-accent) !important;
+}
+
+.iconOsdProgressInner,
+.lyricsFeaturePillow,
+.mdl-radio__focus-circle {
+  background: var(--matinee-accent);
+}
+
+.listItemIcon:not(.listItemIcon-transparent) {
+  background-color: var(--matinee-accent);
+  color: #0a0b0d;
+}
+
+.mdl-radio.show-focus
+  .mdl-radio__button:focus
+  + .mdl-radio__circles
+  :is(.mdl-radio__inner-circle, .mdl-radio__outer-circle) {
+  color: var(--matinee-accent);
+}
