@@ -36,6 +36,16 @@ Add any of these under the import line:
 | `--matinee-hero-height`   | `max(62vh, 440px)`          | How much artwork shows on desktop detail pages |
 | `--matinee-font`          | Geist, IBM Plex Sans Arabic | The whole UI font                              |
 
+## Plugins
+
+Matinee also styles these, install them from their own repos and they follow the theme:
+
+- [Media Bar](https://github.com/IAmParadox27/jellyfin-plugin-media-bar), the slideshow on top of home
+- [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections), its rows use Matinee's cards as they are
+- [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced), the launcher panel, poster tags, chips and modal buttons
+
+Media Bar and Home Screen Sections change Jellyfin's web files through File Transformation, so after installing or changing them do a hard refresh (Ctrl+Shift+R), a normal refresh keeps the old cached files.
+
 ## Good to know
 
 - Made and tested on Jellyfin 12.1 in the web client.
