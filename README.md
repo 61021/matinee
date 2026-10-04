@@ -4,6 +4,14 @@ A cinematic theme for Jellyfin 12, made for the new interface.
 
 Full-bleed artwork on every show and movie page, title logos instead of plain text, Phosphor icons everywhere, Geist for the type, and one amber accent instead of Jellyfin blue, on desktop and phone, in dark and light.
 
+![The Handmaid's Tale show page in Matinee](docs/screenshots/show.webp)
+
+| Home, with Media Bar                                                  | Season                                                                         |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| ![Home page with the Media Bar slideshow](docs/screenshots/home.webp) | ![Season page with episode list](docs/screenshots/season.webp)                 |
+| **Light**                                                             | **Phone**                                                                      |
+| ![Show page in light mode](docs/screenshots/light.webp)               | <img src="docs/screenshots/phone.webp" alt="Show page on a phone" width="260"> |
+
 ## Install
 
 Open **Dashboard → General → Custom CSS**, paste this line, save and refresh:
