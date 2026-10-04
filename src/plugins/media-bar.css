@@ -1,0 +1,85 @@
+/* Media Bar (IAmParadox27/jellyfin-plugin-media-bar) */
+#slides-container {
+  font-family: var(--matinee-font);
+}
+
+#slides-container .gradient-overlay {
+  background:
+    linear-gradient(to top, var(--jf-palette-background-default) 0%, transparent 42%),
+    linear-gradient(var(--matinee-to-end), rgb(var(--jf-palette-background-defaultChannel) / 85%) 0%, transparent 60%);
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+#slides-container.layout-marquee .spec-line {
+  font-family: var(--matinee-font);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+#slides-container.layout-marquee .spec-item .community-rating-star {
+  color: var(--matinee-accent);
+}
+
+#slides-container .play-button {
+  gap: 0.45rem;
+  padding-inline: 1.15rem 1.5rem;
+  background: #fff;
+  color: #0a0b0d;
+  font-family: var(--matinee-font);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#slides-container .detail-button,
+#slides-container .favorite-button {
+  border: 0;
+  background: rgb(255 255 255 / 14%);
+  color: #fff;
+}
+
+#slides-container .detail-button:hover,
+#slides-container .favorite-button:hover {
+  border: 0;
+  background: rgb(255 255 255 / 24%);
+}
+
+#slides-container .favorite-button.favorited {
+  color: var(--matinee-accent);
+}
+
+#slides-container :is(.play-button, .detail-button, .favorite-button)::before {
+  content: '';
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: currentColor;
+  mask: var(--matinee-icon) center / contain no-repeat;
+}
+
+#slides-container .play-button::before {
+  --matinee-icon: var(--matinee-i-play-fill);
+}
+
+#slides-container .detail-button::before {
+  --matinee-icon: var(--matinee-i-info);
+}
+
+#slides-container .favorite-button::before {
+  --matinee-icon: var(--matinee-i-heart);
+}
+
+#slides-container .favorite-button.favorited::before {
+  --matinee-icon: var(--matinee-i-heart-fill);
+}
+
+#slides-container .arrow {
+  border: 0;
+  background: rgb(255 255 255 / 12%);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+#slides-container .arrow:hover {
+  border: 0;
+  background: rgb(255 255 255 / 22%);
+}
