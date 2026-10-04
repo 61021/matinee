@@ -1,7 +1,7 @@
 /* Jellyfin 12 reads these palette variables in both the modern and legacy UI. */
 :root,
 :root[data-theme] {
-  --matinee-build: "041640964002";
+  --matinee-build: '041640964002';
   --jf-palette-background-default: #0a0b0d;
   --jf-palette-background-paper: #16181c;
   --jf-palette-text-primary: #f4f5f7;
