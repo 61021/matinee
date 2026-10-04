@@ -39,7 +39,7 @@ Add any of these under the import line:
 ## Good to know
 
 - Made and tested on Jellyfin 12.1 in the web client.
-- The full-bleed artwork on desktop needs a window at least 1000px wide, that's Jellyfin's own rule, smaller windows get the phone layout's artwork instead.
+- The full-bleed artwork on desktop needs a window at least 1000px wide, that's Jellyfin's own rule, below that it shows no backdrop at all. Phones have their own layout and always get the artwork.
 - Icons are inlined in the CSS, fonts load from jsDelivr through Fontsource.
 
 ## Development
