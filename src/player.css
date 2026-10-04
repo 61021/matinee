@@ -1,0 +1,72 @@
+.videoOsdBottom {
+  padding-top: 9em;
+  background: linear-gradient(to top, rgb(0 0 0 / 88%) 0%, rgb(0 0 0 / 50%) 45%, transparent);
+}
+
+.osdTitle {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.osdPositionText,
+.osdDurationText,
+.osdTimeText {
+  font-variant-numeric: tabular-nums;
+}
+
+.videoOsdBottom .buttons button {
+  border-radius: 999px;
+}
+
+.videoOsdBottom .buttons button:hover {
+  background: rgb(255 255 255 / 12%);
+}
+
+.videoOsdBottom .btnPause {
+  margin-inline: 0.4em;
+  padding: 0.35em;
+  background: #fff;
+  color: #0a0b0d;
+}
+
+.videoOsdBottom .btnPause:hover {
+  background: #fff;
+  transform: scale(1.06);
+}
+
+.mdl-slider {
+  color: var(--matinee-accent);
+}
+
+.mdl-slider::-webkit-slider-thumb {
+  background: var(--jf-palette-primary-main);
+}
+
+.mdl-slider::-moz-range-thumb {
+  background: var(--jf-palette-primary-main);
+}
+
+.videoOsdBottom .mdl-slider::-webkit-slider-thumb {
+  background: #fff;
+}
+
+.videoOsdBottom .mdl-slider::-moz-range-thumb {
+  background: #fff;
+}
+
+.mdl-slider-background-flex {
+  height: 0.3em;
+  margin-top: -0.15em;
+  border-radius: 999px;
+}
+
+.mdl-slider-background-lower,
+.sliderMarker.watched {
+  background-color: var(--matinee-accent);
+}
+
+.sliderBubble {
+  border-radius: 8px;
+  background: var(--jf-palette-background-paper);
+  box-shadow: var(--matinee-card-shadow);
+}
