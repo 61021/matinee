@@ -1,0 +1,92 @@
+/* Jellyfin only renders the fixed backdrop banner at 1000px and up. */
+@media (min-width: 1000px) {
+  .backgroundContainer.withBackdrop {
+    opacity: 1;
+    background-color: transparent;
+    background-image:
+      linear-gradient(to top, var(--jf-palette-background-default) 18%, transparent 68%),
+      linear-gradient(var(--matinee-to-end), rgb(var(--jf-palette-background-defaultChannel) / 88%) 0%, transparent 62%);
+  }
+
+  .itemDetailPage #itemBackdrop {
+    height: var(--matinee-hero-height);
+  }
+
+  .itemDetailPage .detailImageContainer {
+    display: none;
+  }
+
+  .layout-desktop .itemDetailPage .detailRibbon,
+  .layout-desktop .itemDetailPage .detailPagePrimaryContent {
+    padding-inline: 3.3%;
+  }
+
+  .itemDetailPage .detailPageWrapperContainer {
+    background: linear-gradient(to bottom, transparent, var(--jf-palette-background-default) 14rem);
+  }
+
+  .itemDetailPage .detailRibbon {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    margin-top: calc(-1 * var(--matinee-ribbon-lift));
+    background: none;
+  }
+
+  .itemDetailPage .detailLogo {
+    top: calc(var(--matinee-hero-height) - var(--matinee-ribbon-lift) - var(--matinee-logo-height) - 12px);
+    inset-inline: 3.3% auto;
+    width: min(420px, 40%);
+    height: var(--matinee-logo-height);
+    background-position: left center;
+  }
+
+  html[dir='rtl'] .itemDetailPage .detailLogo {
+    background-position: right center;
+  }
+
+  .itemDetailPage .detailLogo:not(.hide) ~ .detailPageWrapperContainer :is(.parentName, .itemName.parentNameLast) {
+    display: none;
+  }
+
+  .itemDetailPage .itemName,
+  .itemDetailPage .parentName {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--jf-palette-text-primary);
+  }
+
+  .itemDetailPage .itemMiscInfo {
+    color: var(--jf-palette-text-secondary);
+  }
+}
+
+.mainDetailButtons {
+  gap: 0.6rem;
+  margin: 1.25rem 0 0;
+}
+
+.detailButton {
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border-radius: var(--matinee-button-radius);
+  background: var(--matinee-button-secondary);
+}
+
+.detailButton.btnPlay,
+.detailButton.btnResume {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: var(--jf-palette-primary-main);
+  color: var(--jf-palette-primary-contrastText);
+}
+
+.detailButton:hover {
+  filter: brightness(1.12);
+}
+
+.ratingbutton-icon-withrating {
+  color: var(--matinee-accent);
+}

@@ -40,6 +40,14 @@
   --matinee-card-shadow-hover: 0 18px 40px -14px rgb(0 0 0 / 90%);
   --matinee-card-hover: scale(1.04);
   --matinee-button-radius: 999px;
+  --matinee-hero-height: max(62vh, 440px);
+  --matinee-ribbon-lift: 11rem;
+  --matinee-logo-height: 130px;
+  --matinee-to-end: to right;
+}
+
+html[dir='rtl'] {
+  --matinee-to-end: to left;
 }
 
 :root[data-theme='light'] {
