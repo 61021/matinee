@@ -73,6 +73,7 @@
   padding: 0;
   border-radius: var(--matinee-button-radius);
   background: var(--matinee-button-secondary);
+  color: var(--jf-palette-text-primary);
 }
 
 .detailButton.btnPlay,
