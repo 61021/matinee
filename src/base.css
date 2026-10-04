@@ -1,0 +1,21 @@
+html {
+  scrollbar-color: rgb(255 255 255 / 18%) transparent;
+}
+
+:root[data-theme='light'] {
+  scrollbar-color: rgb(0 0 0 / 22%) transparent;
+}
+
+::selection {
+  background: var(--matinee-accent);
+  color: var(--jf-palette-background-default);
+}
+
+header.MuiAppBar-root {
+  background-image: var(--matinee-appbar-scrim);
+}
+
+header.MuiAppBar-root .MuiAvatar-root {
+  background: var(--matinee-accent);
+  color: #0a0b0d;
+}

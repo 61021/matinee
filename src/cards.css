@@ -1,0 +1,76 @@
+.cardScalable {
+  border-radius: var(--jf-card-borderRadius);
+  box-shadow: var(--matinee-card-shadow);
+  transition:
+    transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.22s;
+}
+
+@media (hover: hover) {
+  .card-hoverable:hover .cardScalable {
+    transform: var(--matinee-card-hover);
+    box-shadow: var(--matinee-card-shadow-hover);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cardScalable {
+    transition: none;
+  }
+
+  .card-hoverable:hover .cardScalable {
+    transform: none;
+  }
+}
+
+.card:focus-visible .cardScalable {
+  outline: 2px solid var(--matinee-accent);
+  outline-offset: 3px;
+}
+
+.defaultCardBackground,
+.defaultCardBackground1,
+.defaultCardBackground2,
+.defaultCardBackground3,
+.defaultCardBackground4,
+.defaultCardBackground5 {
+  background-color: var(--jf-palette-background-paper);
+}
+
+.cardImageIcon {
+  color: var(--jf-palette-text-secondary);
+}
+
+/* Jellyfin centres these with !important. */
+.cardText,
+.cardTextCentered,
+.cardTextCentered > .textActionButton {
+  text-align: start !important;
+}
+
+.cardText-first {
+  color: var(--jf-palette-text-primary);
+  font-weight: 600;
+}
+
+.cardText-secondary {
+  color: var(--jf-palette-text-secondary);
+}
+
+.countIndicator,
+.playedIndicator {
+  background: var(--matinee-accent);
+  color: #0a0b0d;
+  font-weight: 700;
+}
+
+.itemProgressBar {
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--matinee-progress-track);
+}
+
+.itemProgressBarForeground {
+  border-radius: inherit;
+  background-color: var(--matinee-accent);
+}
