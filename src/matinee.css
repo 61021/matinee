@@ -3,6 +3,7 @@
 @import './base.css';
 @import './accents.css';
 @import './generated/icons.css';
+@import './generated/icon-font.css';
 @import './sections.css';
 @import './cards.css';
 @import './detail.css';

@@ -8,3 +8,5 @@ export const DEV_PORT = 5178
 export const BROWSERS = ['defaults', 'chrome >= 79', 'safari >= 15']
 
 export const ICONS_OUT_FILE = 'src/generated/icons.css'
+export const ICON_FONT_OUT_FILE = 'src/generated/icon-font.css'
+export const ICON_FONT_NAME = 'Matinee Icons'
